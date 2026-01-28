@@ -32,8 +32,7 @@ CREATE TABLE IF NOT EXISTS Orders (
 	customer_id INT,
 	order_date DATE,
 	CONSTRAINT fk_Orders_Customers
-	FOREIGN KEY (customer_id)
-	REFERENCES Customers(customer_id)
+	FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
 );
 
 CREATE TABLE IF NOT EXISTS Order_Details (
